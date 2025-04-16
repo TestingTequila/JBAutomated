@@ -24,12 +24,12 @@ public class YourStore {
         Thread.sleep(2000);
     }
 
-    public void clickOnLoginLink() {
+    public AccountLogin clickOnLoginLink() {
         ca.doClick(loginLink);
+        return new AccountLogin(driver);
     }
 
-    public  void clickOnGiftCertificatesTab()
-    {
+    public void clickOnGiftCertificatesTab() {
         ca.doClick(giftCertificates);
     }
 }
