@@ -1,0 +1,38 @@
+TDD: Test Driven Development
+ ->TestNg
+ ->Junit
+  you don't have to rely on main method to execute your test cases
+   3As --> @annotations, attributes, assertions
+           @annotations:
+              will always start with @
+              We can use annotations along with methods
+              @BeforeSuite
+              @BeforeTest
+              @BeforeClass
+              @BeforeMethod
+              @Test
+              @AfterMethod
+              @AfterClass
+              @AfterTest
+              @AfterSuite
+              -----------
+              @DataProvider
+              @Parameter
+              =====================================================================================
+           attributes:
+              we can use attributes along with annotations
+              priority
+              enabled
+              dependsOnMethods
+              groups
+              dependsONGroups
+              alwaysRun
+              invocationCount
+              timeout
+              =====================================================================================
+           assertions:
+              we will use assertions to validate anything
+              assertEquals
+              assertNotEquals
+              assertTrue
+              assertFalse
