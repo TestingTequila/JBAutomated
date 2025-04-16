@@ -25,7 +25,8 @@ public class AccountLogin {
         ca.doSendKeys(passwordTextBox, pwd);
     }
 
-    public void clickOnLoginButton() {
+    public MyAccount clickOnLoginButton() {
         ca.doClick(loginButton);
+        return new MyAccount(driver);
     }
 }
