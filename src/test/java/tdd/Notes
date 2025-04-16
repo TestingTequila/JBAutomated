@@ -2,19 +2,20 @@ TDD: Test Driven Development
  ->TestNg
  ->Junit
   you don't have to rely on main method to execute your test cases
+  you can also generate report using testNg/Junit
    3As --> @annotations, attributes, assertions
            @annotations:
               will always start with @
               We can use annotations along with methods
-              @BeforeSuite
-              @BeforeTest
-              @BeforeClass
-              @BeforeMethod
-              @Test
-              @AfterMethod
-              @AfterClass
-              @AfterTest
-              @AfterSuite
+              @BeforeSuite:This will be executed before @BeforeTest and only once
+              @BeforeTest: This will be executed before @BeforeClass and only once
+              @BeforeClass: This will be executed before @BeforeMethod and only once
+              @BeforeMethod: This will be executed before every test case [@Test]
+              @Test: This is used to represent test case
+              @AfterMethod: This will be executed after every test case [@Test]
+              @AfterClass:This will be executed after @AfterMethod and only once
+              @AfterTest:This will be executed after @AfterClass and only once
+              @AfterSuite:This will be executed after @AfterTest and only once
               -----------
               @DataProvider
               @Parameter
@@ -36,3 +37,5 @@ TDD: Test Driven Development
               assertNotEquals
               assertTrue
               assertFalse
+              ====================================================================================
+              Run Test Cases and Generate report using xml file.

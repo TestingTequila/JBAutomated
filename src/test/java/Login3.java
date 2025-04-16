@@ -6,7 +6,7 @@ import pom.AccountLogin;
 import pom.MyAccount;
 import pom.YourStore;
 
-public class Login3 extends RemoteWebDriver {
+public class Login3 {
 
     public static void main(String[] args) throws InterruptedException {
         //1- Open the browser

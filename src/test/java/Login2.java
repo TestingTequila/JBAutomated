@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class Login2 extends RemoteWebDriver {
+public class Login2 {
 
     public static void main(String[] args) throws InterruptedException {
         //1- Open the browser
