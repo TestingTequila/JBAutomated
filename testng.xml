@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/91886/IdeaProjects/JBAutomation_MBSR">
+        <parameter name="url" value="https://www.bankofamerica.com/"></parameter>
+        <parameter name="browserType" value="Chrome"></parameter>
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="smoke"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+        <classes>
+<!--            <class name="tdd.Login4WithTestNg">-->
+<!--                <methods>-->
+<!--                    <include name="login1"/>-->
+<!--                    <include name="login2"/>-->
+<!--                    <include name="login3"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="tdd.AttributesConcepts">
+                <methods>
+                    <exclude name="login"/>
+                    <exclude name="registration"/>
+                    <exclude name="contactUs"/>
+                    <exclude name="product"/>
+                    <exclude name="payment"/>
+                    <include name="banking"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

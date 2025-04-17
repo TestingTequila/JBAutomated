@@ -3,6 +3,7 @@ package commonfunctions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class CommonActions {
 
@@ -31,11 +32,7 @@ public class CommonActions {
 
     public void validatePageTitle(String expectedPageTitle, String successMessage, String failureMessage) {
         String actualPageTitle = driver.getTitle();
-        if (actualPageTitle.equals(expectedPageTitle)) {
-            System.out.println(successMessage);
-        } else {
-            System.out.println(failureMessage);
-        }
+        Assert.assertEquals(actualPageTitle,expectedPageTitle,"Login-Failed" );
     }
 
     public void validatePageUrl(String urlPart, String successMessage, String failureMessage) {

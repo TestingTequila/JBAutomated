@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="JBAutomation_MBSR(failed)">
+    <classes>
+      <class name="tdd.Login4WithTestNg">
+        <methods>
+          <include name="login2"/>
+          <include name="login1"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- tdd.Login4WithTestNg -->
+    </classes>
+  </test> <!-- JBAutomation_MBSR(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

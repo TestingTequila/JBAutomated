@@ -1,5 +1,6 @@
 package tdd;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class TestNgAnnotations {
@@ -42,11 +43,13 @@ public class TestNgAnnotations {
     @Test
     public void login() {
         System.out.println("@Test: This is Login Test Case");
+        Assert.assertTrue(true);
     }
 
     @Test
     public void registration() {
         System.out.println("@Test: This is registration Test Case");
+
     }
 
     @Test
@@ -58,4 +61,18 @@ public class TestNgAnnotations {
     public void removeUrl() {
         System.out.println("@AfterMethod: This will remove the url");
     }
+
+    @Test(dataProvider = "getData")
+    public void login(String userName, String password) {
+        System.out.println("@Test: This is Login Test Case -> " + "User: " + userName + " ,Password: " + password);
+    }
+
+    @DataProvider
+    public Object[][] getData()
+    {
+        Object[][] data = {{"Jason", "Test@1234"}, {"Kerry", "test@4321"}, {"John", "test@9876"}};
+        return data;
+    }
+
+
 }
