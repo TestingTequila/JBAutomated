@@ -1,0 +1,9 @@
+        //ChromeDriver driver=new ChromeDriver();
+        //FirefoxDriver driver=new FirefoxDriver();
+        //EdgeDriver driver = new EdgeDriver();
+        //SafariDriver driver = new SafariDriver();
+
+        //Design Pattern:
+          //1. POM[Page Object Model]
+               For every page, we should create a separate class file and every action on that page should be defined
+               as method within this class file

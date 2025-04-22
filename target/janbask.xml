@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="104.205" tests="6" skipped="0" failures="2" errors="0" timestamp="2025-04-22T03:29:53.134506500Z">
+<testcase classname="Login Functionality" name="To validate login functionality on providing correct credentials" time="20.256">
+<system-out><![CDATA[
+And enter the url...........................................................passed
+And click on my account icon................................................passed
+And click on login link.....................................................passed
+When enter correct email....................................................passed
+When enter correct password.................................................passed
+And click on login button...................................................passed
+Then validate login status..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="To validate login functionality on providing correct credentials from steps of scenario" time="16.369">
+<failure type="java.lang.AssertionError" message="Login-Failed expected [My Account] but found [Account Login]">
+<![CDATA[java.lang.AssertionError: Login-Failed expected [My Account] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at commonfunctions.CommonActions.validatePageTitle(CommonActions.java:35)
+	at pom.MyAccount.validateLoginStatus(MyAccount.java:15)
+	at stepdefinition.Login.validate_login_status(Login.java:59)
+	at ✽.validate login status(file:///C:/Users/91886/IdeaProjects/JBAutomation_MBSR/src/main/resources/features/Login.feature:34)
+]]>
+</failure>
+<system-out><![CDATA[
+And enter the url...........................................................passed
+And click on my account icon................................................passed
+And click on login link.....................................................passed
+When enter correct email as "sheila.morris@janbask.com".....................passed
+When enter correct password as "test@12345".................................passed
+And click on login button...................................................passed
+Then validate login status..................................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="To validate login functionality on providing correct credentials from steps of scenario using data table" time="17.488">
+<system-out><![CDATA[
+And enter the url...........................................................passed
+And click on my account icon................................................passed
+And click on login link.....................................................passed
+When enter details of users.................................................passed
+And click on login button...................................................passed
+Then validate login status..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="To validate login functionality on providing correct credentials from steps of scenario using data table - #1.1" time="16.105">
+<failure type="java.lang.AssertionError" message="Login-Failed expected [My Account] but found [Account Login]">
+<![CDATA[java.lang.AssertionError: Login-Failed expected [My Account] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at commonfunctions.CommonActions.validatePageTitle(CommonActions.java:35)
+	at pom.MyAccount.validateLoginStatus(MyAccount.java:15)
+	at stepdefinition.Login.validate_login_status(Login.java:59)
+	at ✽.validate login status(file:///C:/Users/91886/IdeaProjects/JBAutomation_MBSR/src/main/resources/features/Login.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+And enter the url...........................................................passed
+And click on my account icon................................................passed
+And click on login link.....................................................passed
+When enter correct "jason.roger@janbask.com" and correct "test@12345".......passed
+And click on login button...................................................passed
+Then validate login status..................................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="To validate login functionality on providing correct credentials from steps of scenario using data table - #1.2" time="16.815">
+<system-out><![CDATA[
+And enter the url...........................................................passed
+And click on my account icon................................................passed
+And click on login link.....................................................passed
+When enter correct "sheila.morris@janbask.com" and correct "test@1234"......passed
+And click on login button...................................................passed
+Then validate login status..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="To validate login functionality on providing correct credentials from steps of scenario using data table - #1.3" time="16.531">
+<system-out><![CDATA[
+And enter the url...........................................................passed
+And click on my account icon................................................passed
+And click on login link.....................................................passed
+When enter correct "forest.grump@janbask.com" and correct "test@1234".......passed
+And click on login button...................................................passed
+Then validate login status..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

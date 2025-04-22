@@ -1,0 +1,43 @@
+TDD: Test Driven Development
+ ->TestNg
+ ->Junit
+  you don't have to rely on main method to execute your test cases
+  you can also generate report using testNg/Junit
+   3As --> @annotations, attributes, assertions
+           @annotations:
+              will always start with @
+              We can use annotations along with methods
+              @BeforeSuite:This will be executed before @BeforeTest and only once
+              @BeforeTest: This will be executed before @BeforeClass and only once
+              @BeforeClass: This will be executed before @BeforeMethod and only once
+              @BeforeMethod: This will be executed before every test case [@Test]
+              @Test: This is used to represent test case
+              @AfterMethod: This will be executed after every test case [@Test]
+              @AfterClass:This will be executed after @AfterMethod and only once
+              @AfterTest:This will be executed after @AfterClass and only once
+              @AfterSuite:This will be executed after @AfterTest and only once
+              =====================================================================================
+           attributes:
+              we can use attributes along with annotations
+              priority: this is used to set the execution order of your test cases
+              enabled{true/false} : this is used to enable(true) or disable(false) any test case execution
+              dependsOnMethods: This will execute only if depending method is passed, else this TC will be skipped
+              alwaysRun: This will always run your TC, no other condition can override this
+              invocationCount: This will execute the test case, n number of times
+              groups: This helps in grouping the Test Cases
+              dependsONGroups: This will execute only if all the test cases of a particular group passes else this will be skipped
+              timeout:Test case will fail if it is not executed within given time.
+              =====================================================================================
+           assertions:
+              we will use assertions to validate anything
+              assertEquals
+              assertNotEquals
+              assertTrue
+              assertFalse
+              Hard Assertion Vs Soft Assertions
+              ====================================================================================
+              @DataProvider
+              Generate Report in testNG from IDE
+              ===================================================================================
+              Run Test Cases and Generate report using xml file.
+              @Parameter
